@@ -1,2 +1,66 @@
-/*Imágenes*/
+/*GENERAL*/
+body{margin:0%;}
+ul{list-style-type: none;}
+a{text-decoration: none;;}
 .img-fluid{width: 100%;}
+
+/*Media Queries*/
+@media (min-width:1024px) {
+    header{background-color: #c9d1c8;}
+    nav{display: flex;}
+    ul{display: flex;flex-direction: row;align-items:center ;}
+    a{margin: 15px;color: #5b7065;
+    font-size: 20px;}
+
+    /*GRIDS*/
+    .grid{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+    header{grid-area: header}
+    main{grid-area: main;}
+    footer{grid-area: footer;}
+    header, footer, ul{display: flex;flex-direction: row;}
+    footer{justify-content: space-between;background-color:#c9d1c8;}
+
+    .gridmain{
+        display: grid;
+        grid-template-areas: 
+        "portada portada"
+        "titulo titulo"
+        "espacio tunel"
+        "fabrica parrafo"
+        "espacio2 parrafo2";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+    }
+    .portada{grid-area: portada;background-color: #5b7065;}
+    .titulo{grid-area: titulo;}
+    .espacio{grid-area: espacio;}
+    .imgTunel{grid-area: tunel;background-color: #c9d1c8;}
+    .imgFabrica{grid-area: fabrica; background-color: #5b7065;}
+    .parrafo1{grid-area: parrafo;}
+    .espacio2{grid-area: espacio2;}
+    .parrafo2{grid-area: parrafo2;}
+
+    /*Imágenes*/
+    .port{height: 710px;}
+    .espacio, .espacio2{background-color: #5b7065;}
+    
+    /*TEXTOS*/
+    .titulo{display: flex;flex-direction: column;
+        align-items: center; background-color: #5b7065;}
+    h1{font-size: 50px; color:#c9d1c8;}
+    .parrafo1, .parrafo2{background-color: #c9d1c8;}
+    .p1{font-size: 25px;color:#04202c;
+        margin:40px;padding: 20px;}
+    .p2{font-size: 30px;color:#c9d1c8;
+         background-color: #04202c;margin:100px;padding:50px;}
+    .contacto{display: flex;flex-direction: column;justify-content: center;}
+
+}
