@@ -83,13 +83,15 @@ h3{font-size: 20px;margin:5px;}
     /*GENERAL*/
     header, footer{display: flex;flex-direction: column;align-items: center;}
     footer{background-color: #c9d1c8;}
-    ul{display: flex;flex-wrap:wrap;background-color: #c9d1c8;}
+    ul{display: flex;flex-wrap:wrap;
+        justify-content:space-evenly;background-color: #c9d1c8;}
+    li{margin-top: 20px;margin-bottom:15px ;}
     a{margin:15px;padding: 15px;}
     /*TEXTOS*/
     h1{font-size: 40px;}
     h3{font-size: 20px;margin:5px;}
     .datos{font-size: 20px;margin:5px;}
-    .p1{font-size: 25px;margin: 0%;}
+    .p1{font-size: 20px;margin: 0%;}
     .p2{font-size: 25px;margin: 0%;}
     .portada, .imgFabrica, .imgTunel{background-color: #5b7065;}
     .port{height: 300px;}
